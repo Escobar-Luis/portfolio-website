@@ -25,3 +25,9 @@ dist-ssr
 
 # Development resources
 .dev-resources/
+
+# Development source files (with comments)
+/src/
+
+# Only track production files
+!/src-prod/

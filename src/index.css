@@ -322,20 +322,26 @@ section {
   }
 }
 
-/* Hero text slider starts */
+/* Hero Text Animation Styles */
+
+/* Container for sliding text - keeps it inline with surrounding text */
 .slide {
   display: inline-block;
   flex-direction: column;
   transition: all cubic-bezier(0.71, 0.03, 0.34, 1);
 }
 
+/* Wrapper for animated content - handles the actual animation */
 .wrapper {
   display: flex;
   flex-direction: column;
+  /* 21s duration for smooth transitions between words */
   animation: wordSlider 21s infinite cubic-bezier(0.9, 0.01, 0.3, 0.99);
 }
 
+/* Keyframe animation for sliding words */
 @keyframes wordSlider {
+  /* Each step moves the text up by a percentage */
   0% {
     transform: translateY(0.5%);
   }
@@ -362,7 +368,25 @@ section {
   }
 }
 
-/* Hero Text slider ends */
+/* Hero Layout Styles */
+.hero-layout {
+  @apply relative z-10 xl:mt-20 mt-32 md:h-dvh h-[80vh] flex xl:items-center items-start justify-center;
+}
+
+/* Hero Text Container Styles */
+.hero-text {
+  @apply flex flex-col justify-center md:text-[60px] text-[30px] font-semibold relative z-10 pointer-events-none;
+  
+  /* Style for icons next to words */
+  img {
+    @apply size-8 md:size-10 object-contain;
+  }
+  
+  /* Style for sliding text container */
+  .slide {
+    @apply absolute pt-0 px-2 md:px-5 py-[30px] h-[48px] md:h-[78px] md:translate-y-1 translate-y-0 overflow-hidden;
+  }
+}
 
 .gradient-line {
   width: 2px;

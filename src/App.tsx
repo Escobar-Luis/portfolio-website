@@ -1,11 +1,12 @@
 import React from 'react'
+import Hero from './sections/Hero'
 
 type Props = {}
 
 export default function App({}: Props) {
   return (
-    <div>
-        <h1 className="text-3xl underline">Hello World</h1>
-    </div>
+  <>
+  <Hero />
+  </>
   )
 }
