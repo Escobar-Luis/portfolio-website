@@ -8,8 +8,8 @@
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "prepare-prod": "node scripts/prepare-commit.js",
-    "prepare": "husky install"
+    "prepare-prod": "node .dev-resources/utils/scripts/prepare-commit.js",
+    "prepare": "node .dev-resources/utils/scripts/prepare-commit.js"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",

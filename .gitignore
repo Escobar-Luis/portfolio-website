@@ -1,3 +1,9 @@
+# Dependencies
+node_modules
+dist
+dist-ssr
+*.local
+
 # Logs
 logs
 *.log
@@ -6,11 +12,6 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-
-node_modules
-dist
-dist-ssr
-*.local
 
 # Editor directories and files
 .vscode/*
@@ -23,11 +24,9 @@ dist-ssr
 *.sln
 *.sw?
 
-# Development resources
-.dev-resources/
+# Development and learning resources
+.dev-resources
+/src
 
-# Development source files (with comments)
-/src/
-
-# Only track production files
-!/src-prod/
+# Keep only production code
+!/src-prod
