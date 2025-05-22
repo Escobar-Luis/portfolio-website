@@ -1,0 +1,141 @@
+{
+  "version": "1.0",
+  "documentation_rules": {
+    "component_documentation": {
+      "required_sections": [
+        "Purpose",
+        "TypeScript vs JSX Comparison",
+        "Props Explanation",
+        "Common Pitfalls",
+        "Usage Examples",
+        "Reference Implementation",
+        "Learning Notes"
+      ],
+      "section_templates": {
+        "Purpose": {
+          "format": [
+            "/**",
+            " * @component {ComponentName}",
+            " * @purpose",
+            " * 1. What this component does in simple terms",
+            " * 2. Why we need this component",
+            " * 3. Where it fits in the larger application",
+            " */"
+          ]
+        },
+        "TypeScript_vs_JSX": {
+          "format": [
+            "/**",
+            " * @typescript_features",
+            " * Key differences from JSX version:",
+            " * 1. Type definitions and why they matter",
+            " * 2. Additional safety checks",
+            " * 3. IDE benefits",
+            " * ",
+            " * @reference ./reference/ComponentName.jsx",
+            " */"
+          ]
+        },
+        "Props_Explanation": {
+          "format": [
+            "/**",
+            " * @props_guide",
+            " * Each prop explained for beginners:",
+            " * @prop {type} propName",
+            " * - What it does:",
+            " * - Why we need it:",
+            " * - Example value:",
+            " * - What happens if we forget it:",
+            " */"
+          ]
+        },
+        "Common_Pitfalls": {
+          "format": [
+            "/**",
+            " * @pitfalls",
+            " * Common mistakes and how to avoid them:",
+            " * 1. Issue: [Description]",
+            " *    Solution: [How to fix]",
+            " *    Example of broken code: [Code snippet]",
+            " *    Working solution: [Code snippet]",
+            " */"
+          ]
+        }
+      }
+    },
+    "code_block_documentation": {
+      "required_elements": [
+        "Purpose of the code block",
+        "Input expectations",
+        "Output guarantees",
+        "Error scenarios",
+        "Performance considerations"
+      ]
+    },
+    "learning_progression": {
+      "documentation_levels": {
+        "L1_Beginner": {
+          "focus": ["Basic concepts", "Simple explanations", "Many examples"],
+          "required_elements": ["Step-by-step breakdown", "Visual analogies", "Common mistakes"]
+        },
+        "L2_Intermediate": {
+          "focus": ["TypeScript specifics", "Best practices", "Performance"],
+          "required_elements": ["Type system benefits", "Optimization opportunities", "Error handling"]
+        },
+        "L3_Advanced": {
+          "focus": ["Architecture decisions", "Trade-offs", "Advanced patterns"],
+          "required_elements": ["Design patterns", "Performance metrics", "Security considerations"]
+        }
+      }
+    },
+    "iteration_tracking": {
+      "version_history": {
+        "format": [
+          "/**",
+          " * @documentation_version {semver}",
+          " * @last_reviewed {date}",
+          " * @improvements_made",
+          " * - [List of documentation improvements]",
+          " * @requested_clarifications",
+          " * - [List of areas needing more detail]",
+          " * @next_iteration_goals",
+          " * - [List of documentation goals for next update]",
+          " */"
+        ]
+      }
+    }
+  },
+  "example_implementation": {
+    "component_template": {
+      "format": [
+        "/**",
+        " * @component Button",
+        " * @purpose",
+        " * A customizable button component that handles user interactions",
+        " * with built-in accessibility and loading states.",
+        " * ",
+        " * @typescript_features",
+        " * - Uses discriminated unions for variant types",
+        " * - Ensures type safety for event handlers",
+        " * - Provides autocomplete for variant options",
+        " * ",
+        " * @reference ./reference/Button.jsx",
+        " * Key differences:",
+        " * 1. Added type safety for onClick handlers",
+        " * 2. Variant prop uses TypeScript union types",
+        " * 3. Proper event typing for keyboard handlers",
+        " * ",
+        " * @pitfalls",
+        " * Common Mistake 1: Forgetting to handle loading state",
+        " * Bad Example:",
+        " *   <Button onClick={handleClick}>Click Me</Button>",
+        " * Good Example:",
+        " *   <Button onClick={handleClick} loading={isLoading}>Click Me</Button>",
+        " * ",
+        " * @version 1.0.0",
+        " * @last_reviewed 2024-03-20",
+        " */"
+      ]
+    }
+  }
+} 

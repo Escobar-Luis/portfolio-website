@@ -24,9 +24,8 @@ lerna-debug.log*
 *.sln
 *.sw?
 
-# Development and learning resources
-.dev-resources
-/src
+# Development resources
+.dev-resources/source
 
 # Keep only production code
 !/src-prod
