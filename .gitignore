@@ -25,7 +25,8 @@ lerna-debug.log*
 *.sw?
 
 # Development resources
-.dev-resources/source
+.dev-resources/
+.dev-resources/**/*
 
 # Keep only production code
 !/src-prod

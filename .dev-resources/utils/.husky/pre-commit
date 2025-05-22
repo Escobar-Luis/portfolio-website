@@ -1,8 +1,0 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
-# Run our prepare-prod script
-npm run prepare-prod
-
-# Add the src-prod directory to git
-git add src-prod/ 
